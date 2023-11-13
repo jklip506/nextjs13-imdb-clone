@@ -9,6 +9,7 @@ const SearchBox = () => {
     e.preventDefault();
     if (!searchTerm) return;
     router.push(`/search/${searchTerm}`);
+    setSearchTerm("");
   }
   return (
     <form
